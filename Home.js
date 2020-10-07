@@ -28,7 +28,8 @@ Cool.forEach(cool => {
  con.forEach(con => {
      Appear_On_Scroll.observe(con) ; 
  });
+
 fetch('https://api.ipify.org/?format=json')
-.then(resutls => results.json)
-.then(data => console.log(data.ip))
+    .then(results => results.json())
+    .then(data => console.log(data.ip))
 
